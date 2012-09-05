@@ -1,0 +1,1 @@
+g++ -o a.out -lopencv_imgproc -lopencv_core -lopencv_highgui sharp.cpp
