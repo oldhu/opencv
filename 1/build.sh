@@ -1,0 +1,1 @@
+g++ -o display -lopencv_core -lopencv_highgui display.cpp
