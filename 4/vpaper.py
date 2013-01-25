@@ -24,7 +24,7 @@ while True:
   img = resize(img)
   gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
   gray = cv2.equalizeHist(gray)
-  ret, thresh = cv2.threshold(gray, 150, 255, 0)
+  ret, thresh = cv2.threshold(gray, 110, 255, 0)
   cv2.imshow('bw', thresh)
   contours, hier = cv2.findContours(thresh, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
   for cnt in contours:
